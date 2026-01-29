@@ -10,25 +10,19 @@ func Subtract(a Int, b Int) Int = a - b
 func Multiply(a Int, b Int) Int = a * b
 
 // Max returns the larger of two integers
-func Max(a Int, b Int) Int = {
-    match a > b {
-        case true => a
-        case false => b
-    }
+func Max(a Int, b Int) Int = (a > b) match {
+    case true => a
+    case _ => b
 }
 
 // Min returns the smaller of two integers
-func Min(a Int, b Int) Int = {
-    match a < b {
-        case true => a
-        case false => b
-    }
+func Min(a Int, b Int) Int = (a < b) match {
+    case true => a
+    case _ => b
 }
 
 // Abs returns the absolute value of an integer
-func Abs(n Int) Int = {
-    match n < 0 {
-        case true => -n
-        case false => n
-    }
+func Abs(n Int) Int = (n < 0) match {
+    case true => -n
+    case _ => n
 }
