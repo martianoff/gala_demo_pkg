@@ -3,10 +3,10 @@ package demomath
 import "github.com/google/uuid"
 
 // GenerateID generates a new UUID string
-func GenerateID() String = uuid.New().String()
+func GenerateID() string = uuid.New().String()
 
 // NewUUID creates a new random UUID
 func NewUUID() uuid.UUID = uuid.New()
 
 // UUIDString converts a UUID to its string representation
-func UUIDString(u uuid.UUID) String = u.String()
+func UUIDString(u uuid.UUID) string = u.String()

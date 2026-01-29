@@ -1,28 +1,28 @@
 package demomath
 
 // Add returns the sum of two integers
-func Add(a Int, b Int) Int = a + b
+func Add(a int, b int) int = a + b
 
 // Subtract returns the difference of two integers
-func Subtract(a Int, b Int) Int = a - b
+func Subtract(a int, b int) int = a - b
 
 // Multiply returns the product of two integers
-func Multiply(a Int, b Int) Int = a * b
+func Multiply(a int, b int) int = a * b
 
 // Max returns the larger of two integers
-func Max(a Int, b Int) Int = (a > b) match {
+func Max(a int, b int) int = (a > b) match {
     case true => a
     case _ => b
 }
 
 // Min returns the smaller of two integers
-func Min(a Int, b Int) Int = (a < b) match {
+func Min(a int, b int) int = (a < b) match {
     case true => a
     case _ => b
 }
 
 // Abs returns the absolute value of an integer
-func Abs(n Int) Int = (n < 0) match {
+func Abs(n int) int = (n < 0) match {
     case true => -n
     case _ => n
 }
