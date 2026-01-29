@@ -1,0 +1,12 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+# Note: This BUILD file is for reference. The package will be
+# transpiled when imported into a GALA project.
+
+exports_files(["math.gala", "gala.mod"])
+
+filegroup(
+    name = "gala_sources",
+    srcs = glob(["*.gala"]),
+    visibility = ["//visibility:public"],
+)
