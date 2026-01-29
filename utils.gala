@@ -1,0 +1,12 @@
+package demoutils
+
+import "github.com/google/uuid"
+
+// GenerateID generates a new UUID string
+func GenerateID() String = uuid.New().String()
+
+// ParseID parses a UUID string and returns whether it's valid
+func IsValidID(s String) Bool = {
+    val _, err = uuid.Parse(s)
+    err == nil
+}
