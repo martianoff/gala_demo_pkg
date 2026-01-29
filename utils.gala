@@ -1,4 +1,4 @@
-package demoutils
+package demomath
 
 import "github.com/google/uuid"
 
